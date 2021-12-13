@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="js-file.js" defer></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Etch-A-Sketch</h1> 
+        </div>
+        <div class="content">
+            <div class="options">
+                <form name="color">
+                    <label for="color"><strong>Color:</strong></label>
+                    <input type="color" name="color" id="color">
+                    <input type="submit" class="btn" onclick="changeColor(color.value);return false" value="Submit" id="colorSubmit">
+                </form>
+                <button class="btn clear" onclick="clearCanvas()">Clear Canvas</button>
+                <button class="btn" onclick="location.reload()">Change Size</button>
+            </div>
+            <div class="canvas">
+            </div>
+        </div>
+        <footer>
+            Made with &#128420; by Joshua Hinchey.
+        </footer>
+    </div>
+</body>
+</html>
